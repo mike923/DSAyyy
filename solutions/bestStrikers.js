@@ -13,7 +13,14 @@ const bestStrikers = (arr) => {
     arr[i].differenceInSalary = (maxGoals - arr[i].goals) * 20000 + (arr[i].penalties * 25000)
   }
 
-  arr.sort((a, b) => a.differenceInSalary - b.differenceInSalary)
+  arr.sort((a, b) => {
+    const comparison = a.differenceInSalary - b.differenceInSalary
+    if (comparison === 0) {
+      const secondComparison = b.goals - a.goals
+      return secondComparison
+    }
+    return comparison
+  })
   console.log(maxGoals)
   return arr
 }

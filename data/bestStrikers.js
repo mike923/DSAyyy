@@ -15,9 +15,19 @@ const strikers = [
     penalties: 10,
   },
   {
+    name: "Open Source",
+    goals: 74,
+    penalties: 15,
+  },
+  {
+    name: "Egg Easter",
+    goals: 63,
+    penalties: 5,
+  },
+  {
     name: "Mark Expo",
     goals: 78,
-    penalties: 16,
+    penalties: 18,
   },
 ];
 
