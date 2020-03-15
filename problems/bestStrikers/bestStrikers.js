@@ -1,4 +1,4 @@
-const strikers = require('../data/bestStrikers')
+const strikers = require('../../data/bestStrikers')
 
 const bestStrikers = arr => {
   // Your code here...

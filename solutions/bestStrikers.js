@@ -1,18 +1,20 @@
 const strikers = require('../data/bestStrikers')
 
 const bestStrikers = (arr) => {
-  let max = 0;
+  let maxGoals = 0;
 
   for (let i = 0; i < arr.length; i++) {
-    if (max < arr[i].goals) {
-      max = arr[i].goals
+    if (maxGoals < arr[i].goals) {
+      maxGoals = arr[i].goals
     }
   }
 
-  arr.sort((a, b) => b.goals - a.goals)
+  for (let i = 0; i < arr.length; i++) {
+    arr[i].differenceInSalary = (maxGoals - arr[i].goals) * 20000 + (arr[i].penalties * 25000)
+  }
 
-  console.log(max)
-
+  arr.sort((a, b) => a.differenceInSalary - b.differenceInSalary)
+  console.log(maxGoals)
   return arr
 }
 
