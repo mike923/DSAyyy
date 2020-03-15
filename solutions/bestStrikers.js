@@ -22,7 +22,7 @@ const bestStrikers = (arr) => {
     return comparison
   })
   console.log(maxGoals)
-  return arr
+  return arr.map(obj => obj.name)
 }
 
 console.log(bestStrikers(strikers))
