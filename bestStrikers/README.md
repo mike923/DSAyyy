@@ -4,7 +4,6 @@
 
 At the end of the season a soccer team has all of the stats of their players. Create an algorithm that will take in all the data of the strikers and return a sorted array of all the strikers data.
 
-Incase of a tie in goals the striker with the lower first letter of the first name comes first.
 
 ## Example
 
