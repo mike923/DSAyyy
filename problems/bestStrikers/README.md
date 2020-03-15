@@ -30,9 +30,19 @@ const strikers = [
     penalties: 10,
   },
   {
+    name: "Open Source",
+    goals: 74,
+    penalties: 15,
+  },
+  {
+    name: "Egg Easter",
+    goals: 63,
+    penalties: 5,
+  },
+  {
     name: "Mark Expo",
     goals: 78,
-    penalties: 16,
+    penalties: 18,
   },
 ];
 ```
@@ -41,29 +51,11 @@ const strikers = [
 
 ```js
 [
-  {
-    name: "Mark Expo",
-    goals: 78,
-    penalties: 16,
-    differenceInSalary: 400000,
-  },
-  {
-    name: "Gree Bun",
-    goals: 72,
-    penalties: 14,
-    differenceInSalary: 470000,
-  },
-  {
-    name: "Oval Redd",
-    goals: 67,
-    penalties: 10,
-    differenceInSalary: 470000,
-  },
-  {
-    name: "Speak Chet",
-    goals: 78,
-    penalties: 19,
-    differenceInSalary: 475000,
-  },
-];
+  'Egg Easter',
+  'Mark Expo',
+  'Open Source',
+  'Gree Bun',
+  'Oval Redd',
+  'Speak Chet'
+]
 ```
